@@ -14,11 +14,12 @@ This is a Web-Based Augmented Reality Application using AR.js and A-Frame.
 3. Scan markers to see AR models
 
 ## Technologies Used
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScrip
 - A-Frame
 - AR.js
 
-#deployed site link
+# deployed site link
 https://ar-learning-app.onrender.com/
-## to use it simple pen the site and then show the camera to the marker in the folder
+
+To use it, simple open the site and then show the camera to the marker(1,2,3).png in the assets folder
 
