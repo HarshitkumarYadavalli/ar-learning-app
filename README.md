@@ -17,3 +17,8 @@ This is a Web-Based Augmented Reality Application using AR.js and A-Frame.
 - HTML, CSS, JavaScript
 - A-Frame
 - AR.js
+
+#deployed site link
+https://ar-learning-app.onrender.com/
+## to use it simple pen the site and then show the camera to the marker in the folder
+
