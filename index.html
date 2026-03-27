@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR Learning App</title>
+
+  <!-- AR Libraries -->
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+
+<!-- AR Scene -->
+<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+  <!-- Marker 1 -->
+  <a-marker id="marker1" type="pattern" url="assets/marker1.patt" emitevents="true">
+    <a-entity 
+      gltf-model="assets/model1.glb"
+      position="0 0.5 0"
+      scale="0.5 0.5 0.5"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+    </a-entity>
+  </a-marker>
+
+  <!-- Marker 2 -->
+  <a-marker id="marker2" type="pattern" url="assets/marker2.patt" emitevents="true">
+    <a-entity 
+      gltf-model="assets/model2.glb"
+      position="0 0.5 0"
+      scale="0.5 0.5 0.5"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+    </a-entity>
+  </a-marker>
+
+  <!-- Marker 3 -->
+  <a-marker id="marker3" type="pattern" url="assets/marker3.patt" emitevents="true">
+    <a-entity 
+      gltf-model="assets/model3.glb"
+      position="0 0.5 0"
+      scale="0.5 0.5 0.5"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+    </a-entity>
+  </a-marker>
+
+  <a-entity camera></a-entity>
+</a-scene>
+
+<!-- UI Panel -->
+<div id="infoPanel">
+  <h2 id="title">Scan a Marker</h2>
+  <p id="desc">Point your camera at a marker to see AR content.</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

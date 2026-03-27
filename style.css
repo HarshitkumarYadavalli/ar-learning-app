@@ -1,0 +1,23 @@
+#infoPanel {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  font-family: Arial;
+  display: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#title {
+  margin: 0;
+  font-size: 20px;
+}
+
+#desc {
+  margin-top: 5px;
+  font-size: 14px;
+}
